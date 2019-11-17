@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>conveteter feet and meter</title>
+</head>
+<body>
+<h1> CONVETER FEET AND METER</h1>
+<input type="number" id = "inputmeter" placeholder="input a number meter"
+       oninput = "meterConveter(this.value)"
+       onchange = "meterConveter(this.value)">
+<p>Feet number:<span id="changeMeter"></span></p>
+<input type="number" id = "inputfeet" placeholder="input a number feet"
+oninput="feetConveter(this.value)"
+       onchange="feetConveter(this.value)">
+<p>Meter number:<span id="changeFeeter"></span></p>
+<script>
+function  meterConveter(NM){
+    NM = parseFloat(NM);
+    document.getElementById("changeMeter").innerHTML = NM*0.305;
+}
+function feetConveter(N) {
+    N = parseFloat(N);
+    document.getElementById("changeFeeter").innerHTML = N * 3.279;
+
+}
+</script>
+</body>
+</html>

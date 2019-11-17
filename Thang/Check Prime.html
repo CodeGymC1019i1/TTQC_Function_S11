@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime</title>
+</head>
+<body>
+<script>
+    // boolean (int number)
+    function checkPrime(N) {
+        if (N <= 1) {
+            return 0
+        } else {
+            for (let i = 2; i < N / 2; i++) {
+                if (N % i == 0) {
+                    return 0
+                }
+                return 1
+            }
+        }
+    }
+
+        function getResult(N) {
+            if (checkPrime(N) == 0) {
+                document.write(N + ' is not a prime number')
+
+            } else {
+                document.write(N + ' is a prime number')
+            }
+        }
+let N = prompt ("Input a number");
+        getResult(N)
+
+</script>
+</body>
+</html>
