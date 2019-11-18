@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+<button onclick="alertMessage()">Bài 1</button>
+<h1>Bài 2</h1>
+<button onclick="hienThi()">Bài 2</button>
+<h1>Bài 3</h1>
+<button onclick="hienThi1()">Bài 3</button>
+<h1>Bài 4</h1>
+<button onclick="hienThi2()">Bài 4</button>
+<script type="text/javascript">
+    // Bài 1
+    function alertMessage() {
+        alert("Xin chào!!!")
+    }
+
+    // Bài 2
+    function upValue(value) {
+        value = parseFloat(prompt('Nhập số muốn chuyền vào:'));
+        value++
+        return value;
+    }
+
+    function hienThi() {
+        let giatri;
+        let ht = upValue(giatri);
+        alert(ht);
+    }
+
+    //bài 3
+    let a;
+
+    function upValue3() {
+        let number1 = parseFloat(prompt("Nhập số thứ nhất:"));
+        let number2 = parseFloat(prompt("Nhập số thứ hai:"));
+        if (number1 > number2) {
+            a = 'Số thứ nhất lớn hơn số thứ hai:'
+        } else {
+            a = number1 + number2;
+        }
+        return a;
+    }
+
+    function hienThi1() {
+        upValue3();
+        alert(a);
+    }
+
+    // Bài 4
+    let result;
+
+    function addNumbers() {
+        let firstNum = 4;
+        let secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+
+    function hienThi2() {
+        result = 0;
+        alert('Số ban đầu:' + result)
+        result = addNumbers();
+        alert("Sau khi qua hàm:" + result)
+    }
+    //Bài 5
+</script>
+</body>
+</html>

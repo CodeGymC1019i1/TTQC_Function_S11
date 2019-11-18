@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Temberature Converter</h1>
+<h4>Type a value in the Fahrenheit filed to convert the value to Celcius</h4>
+Nhập độ F:<input type="number" id="doiF" oninput="quydoi(this.value)" onchange="quydoi(this.value)" placeholder="Nhập độ F"><br/>
+<p >Độ C là:<span id="hienThiDoC"></span></p>
+<script>
+    let F=document.getElementById('doiF').value;
+    function quydoi(F) {
+        let C=(F-32)/1.8;
+        document.getElementById('hienThiDoC').innerHTML=C;
+    }
+</script>
+</body>
+</html>

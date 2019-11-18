@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function  processConfirm(x) {
+        let resut='';
+        if(x){
+            resut="Bạn đã đòng ý:"
+        }else {
+            resut="Bạn đã hủy:"
+        }
+        return resut;
+    }
+    let cofirmAnswer=confirm("Bạn có muồn hay không:")
+    let theAnswer=processConfirm(cofirmAnswer);
+    alert(theAnswer);
+</script>
+</body>
+</html>

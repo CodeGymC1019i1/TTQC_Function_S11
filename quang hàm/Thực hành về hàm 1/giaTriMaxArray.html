@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkMin(array1) {
+        let min = array1[0];
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] < min) {
+                min = array1[i];
+            }
+        }
+        return min;
+    }
+    function checkArray1(){
+        let array1 = [3, 5, 1, 8, -3, 7, 8];
+        let min = parseFloat(checkMin(array1));
+        alert(min);
+
+    }
+    checkArray1();
+</script>
+</body>
+</html>
